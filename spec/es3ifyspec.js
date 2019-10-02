@@ -2,8 +2,8 @@ var transform = require("../index.js").transform;
 
 describe("es3ify", function() {
   it("should quote property keys", function() {
-    expect(transform("x = {dynamic: 0, for: 17, null: 34};")).toEqual(
-      "var $__0;x = ($__0={},$__0.dynamic= 0,$__0.for=  17,$__0.null=  34,$__0);"
+    expect(transform("x = {dynamic: 0, static: 17, null: 34};")).toEqual(
+      'x = {dynamic: 0, "static": 17, "null": 34};'
     );
   });
 

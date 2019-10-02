@@ -4,11 +4,11 @@
   "description": "Browserify transform to convert ES5 syntax to be ES3-compatible.",
   "main": "index.js",
   "dependencies": {
-    "esprima": "^2.7.1",
-    "jstransform": "~11.0.0"
+    "jstransform": "~11.0.3",
+    "through": "^2.3.8"
   },
   "devDependencies": {
-    "jasmine-node": "~1.13.1"
+    "jasmine-node": "~3.0.0"
   },
   "repository": {
     "type": "git",
